@@ -34,16 +34,27 @@
             this.pbxLogo = new System.Windows.Forms.PictureBox();
             this.lblBemVindo01 = new System.Windows.Forms.Label();
             this.lblBemVindo02 = new System.Windows.Forms.Label();
+            this.lblLogin = new System.Windows.Forms.Label();
+            this.lblSenha = new System.Windows.Forms.Label();
+            this.btnEmail = new System.Windows.Forms.TextBox();
+            this.tbxSenha = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pbxEmail = new System.Windows.Forms.PictureBox();
+            this.pbxSenha = new System.Windows.Forms.PictureBox();
             this.pnlAzul.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxEmail)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxSenha)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlAzul
             // 
-            this.pnlAzul.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.pnlAzul.AutoScroll = true;
+            this.pnlAzul.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.pnlAzul.Controls.Add(this.lblBemVindo02);
             this.pnlAzul.Controls.Add(this.lblBemVindo01);
             this.pnlAzul.Controls.Add(this.pbxLogo);
+            this.pnlAzul.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.pnlAzul.Location = new System.Drawing.Point(0, 0);
             this.pnlAzul.Name = "pnlAzul";
             this.pnlAzul.Size = new System.Drawing.Size(400, 700);
@@ -68,36 +79,110 @@
             // pbxLogo
             // 
             this.pbxLogo.BackColor = System.Drawing.Color.Transparent;
-            this.pbxLogo.ErrorImage = null;
+            this.pbxLogo.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pbxLogo.ErrorImage")));
             this.pbxLogo.Image = ((System.Drawing.Image)(resources.GetObject("pbxLogo.Image")));
             this.pbxLogo.ImageLocation = "10";
             this.pbxLogo.InitialImage = null;
             this.pbxLogo.Location = new System.Drawing.Point(135, 200);
             this.pbxLogo.Name = "pbxLogo";
             this.pbxLogo.Size = new System.Drawing.Size(130, 130);
+            this.pbxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxLogo.TabIndex = 0;
             this.pbxLogo.TabStop = false;
             // 
             // lblBemVindo01
             // 
             this.lblBemVindo01.AutoSize = true;
-            this.lblBemVindo01.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBemVindo01.Location = new System.Drawing.Point(72, 335);
+            this.lblBemVindo01.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBemVindo01.Location = new System.Drawing.Point(53, 335);
             this.lblBemVindo01.Name = "lblBemVindo01";
-            this.lblBemVindo01.Size = new System.Drawing.Size(271, 30);
+            this.lblBemVindo01.Size = new System.Drawing.Size(313, 32);
             this.lblBemVindo01.TabIndex = 1;
             this.lblBemVindo01.Text = "Seja Bem Vindo ao Sistema ";
             // 
             // lblBemVindo02
             // 
             this.lblBemVindo02.AutoSize = true;
-            this.lblBemVindo02.Font = new System.Drawing.Font("Segoe UI", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBemVindo02.Font = new System.Drawing.Font("Segoe UI", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBemVindo02.ForeColor = System.Drawing.Color.Black;
-            this.lblBemVindo02.Location = new System.Drawing.Point(39, 365);
+            this.lblBemVindo02.Location = new System.Drawing.Point(23, 367);
             this.lblBemVindo02.Name = "lblBemVindo02";
-            this.lblBemVindo02.Size = new System.Drawing.Size(317, 45);
+            this.lblBemVindo02.Size = new System.Drawing.Size(364, 50);
             this.lblBemVindo02.TabIndex = 2;
             this.lblBemVindo02.Text = "Controle de Estoque";
+            // 
+            // lblLogin
+            // 
+            this.lblLogin.AutoSize = true;
+            this.lblLogin.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLogin.ForeColor = System.Drawing.Color.Black;
+            this.lblLogin.Location = new System.Drawing.Point(590, 120);
+            this.lblLogin.Name = "lblLogin";
+            this.lblLogin.Size = new System.Drawing.Size(59, 25);
+            this.lblLogin.TabIndex = 2;
+            this.lblLogin.Text = "Email";
+            // 
+            // lblSenha
+            // 
+            this.lblSenha.AutoSize = true;
+            this.lblSenha.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSenha.ForeColor = System.Drawing.Color.Black;
+            this.lblSenha.Location = new System.Drawing.Point(585, 223);
+            this.lblSenha.Name = "lblSenha";
+            this.lblSenha.Size = new System.Drawing.Size(64, 25);
+            this.lblSenha.TabIndex = 3;
+            this.lblSenha.Text = "Senha";
+            // 
+            // btnEmail
+            // 
+            this.btnEmail.Location = new System.Drawing.Point(557, 148);
+            this.btnEmail.Name = "btnEmail";
+            this.btnEmail.Size = new System.Drawing.Size(125, 20);
+            this.btnEmail.TabIndex = 4;
+            // 
+            // tbxSenha
+            // 
+            this.tbxSenha.Location = new System.Drawing.Point(557, 250);
+            this.tbxSenha.MaxLength = 16;
+            this.tbxSenha.Name = "tbxSenha";
+            this.tbxSenha.PasswordChar = '*';
+            this.tbxSenha.Size = new System.Drawing.Size(125, 20);
+            this.tbxSenha.TabIndex = 5;
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(575, 365);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(84, 32);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Entrar";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // pbxEmail
+            // 
+            this.pbxEmail.Image = ((System.Drawing.Image)(resources.GetObject("pbxEmail.Image")));
+            this.pbxEmail.Location = new System.Drawing.Point(521, 140);
+            this.pbxEmail.Name = "pbxEmail";
+            this.pbxEmail.Size = new System.Drawing.Size(30, 30);
+            this.pbxEmail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxEmail.TabIndex = 7;
+            this.pbxEmail.TabStop = false;
+            // 
+            // pbxSenha
+            // 
+            this.pbxSenha.Image = ((System.Drawing.Image)(resources.GetObject("pbxSenha.Image")));
+            this.pbxSenha.Location = new System.Drawing.Point(521, 245);
+            this.pbxSenha.Name = "pbxSenha";
+            this.pbxSenha.Size = new System.Drawing.Size(30, 30);
+            this.pbxSenha.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxSenha.TabIndex = 8;
+            this.pbxSenha.TabStop = false;
+            this.pbxSenha.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pbxSenha_MouseDown);
+            this.pbxSenha.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pbxSenha_MouseUp);
             // 
             // FormLogin
             // 
@@ -105,6 +190,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(900, 700);
+            this.Controls.Add(this.pbxSenha);
+            this.Controls.Add(this.pbxEmail);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.tbxSenha);
+            this.Controls.Add(this.btnEmail);
+            this.Controls.Add(this.lblSenha);
+            this.Controls.Add(this.lblLogin);
             this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.pnlAzul);
             this.ForeColor = System.Drawing.Color.White;
@@ -114,7 +206,10 @@
             this.pnlAzul.ResumeLayout(false);
             this.pnlAzul.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxEmail)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxSenha)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -125,6 +220,13 @@
         private System.Windows.Forms.PictureBox pbxLogo;
         private System.Windows.Forms.Label lblBemVindo02;
         private System.Windows.Forms.Label lblBemVindo01;
+        private System.Windows.Forms.Label lblLogin;
+        private System.Windows.Forms.Label lblSenha;
+        private System.Windows.Forms.TextBox btnEmail;
+        private System.Windows.Forms.TextBox tbxSenha;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pbxEmail;
+        private System.Windows.Forms.PictureBox pbxSenha;
     }
 }
 
