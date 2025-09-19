@@ -30,15 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
             this.pnlAzul = new System.Windows.Forms.Panel();
-            this.btnFechar = new System.Windows.Forms.Button();
-            this.pbxLogo = new System.Windows.Forms.PictureBox();
-            this.lblBemVindo01 = new System.Windows.Forms.Label();
             this.lblBemVindo02 = new System.Windows.Forms.Label();
+            this.lblBemVindo01 = new System.Windows.Forms.Label();
+            this.pbxLogo = new System.Windows.Forms.PictureBox();
+            this.btnFechar = new System.Windows.Forms.Button();
             this.lblLogin = new System.Windows.Forms.Label();
             this.lblSenha = new System.Windows.Forms.Label();
-            this.btnEmail = new System.Windows.Forms.TextBox();
+            this.tbxEmail = new System.Windows.Forms.TextBox();
             this.tbxSenha = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnEntrar = new System.Windows.Forms.Button();
             this.pbxEmail = new System.Windows.Forms.PictureBox();
             this.pbxSenha = new System.Windows.Forms.PictureBox();
             this.pnlAzul.SuspendLayout();
@@ -60,35 +60,16 @@
             this.pnlAzul.Size = new System.Drawing.Size(400, 700);
             this.pnlAzul.TabIndex = 0;
             // 
-            // btnFechar
+            // lblBemVindo02
             // 
-            this.btnFechar.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnFechar.FlatAppearance.BorderSize = 2;
-            this.btnFechar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFechar.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFechar.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnFechar.Location = new System.Drawing.Point(860, 0);
-            this.btnFechar.Name = "btnFechar";
-            this.btnFechar.Size = new System.Drawing.Size(40, 40);
-            this.btnFechar.TabIndex = 1;
-            this.btnFechar.Text = "X";
-            this.btnFechar.UseVisualStyleBackColor = true;
-            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
-            // 
-            // pbxLogo
-            // 
-            this.pbxLogo.BackColor = System.Drawing.Color.Transparent;
-            this.pbxLogo.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pbxLogo.ErrorImage")));
-            this.pbxLogo.Image = ((System.Drawing.Image)(resources.GetObject("pbxLogo.Image")));
-            this.pbxLogo.ImageLocation = "10";
-            this.pbxLogo.InitialImage = null;
-            this.pbxLogo.Location = new System.Drawing.Point(135, 200);
-            this.pbxLogo.Name = "pbxLogo";
-            this.pbxLogo.Size = new System.Drawing.Size(130, 130);
-            this.pbxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbxLogo.TabIndex = 0;
-            this.pbxLogo.TabStop = false;
+            this.lblBemVindo02.AutoSize = true;
+            this.lblBemVindo02.Font = new System.Drawing.Font("Segoe UI", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBemVindo02.ForeColor = System.Drawing.Color.Black;
+            this.lblBemVindo02.Location = new System.Drawing.Point(23, 367);
+            this.lblBemVindo02.Name = "lblBemVindo02";
+            this.lblBemVindo02.Size = new System.Drawing.Size(364, 50);
+            this.lblBemVindo02.TabIndex = 2;
+            this.lblBemVindo02.Text = "Controle de Estoque";
             // 
             // lblBemVindo01
             // 
@@ -100,16 +81,35 @@
             this.lblBemVindo01.TabIndex = 1;
             this.lblBemVindo01.Text = "Seja Bem Vindo ao Sistema ";
             // 
-            // lblBemVindo02
+            // pbxLogo
             // 
-            this.lblBemVindo02.AutoSize = true;
-            this.lblBemVindo02.Font = new System.Drawing.Font("Segoe UI", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBemVindo02.ForeColor = System.Drawing.Color.Black;
-            this.lblBemVindo02.Location = new System.Drawing.Point(23, 367);
-            this.lblBemVindo02.Name = "lblBemVindo02";
-            this.lblBemVindo02.Size = new System.Drawing.Size(364, 50);
-            this.lblBemVindo02.TabIndex = 2;
-            this.lblBemVindo02.Text = "Controle de Estoque";
+            this.pbxLogo.BackColor = System.Drawing.Color.Transparent;
+            this.pbxLogo.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pbxLogo.ErrorImage")));
+            this.pbxLogo.ImageLocation = "10";
+            this.pbxLogo.InitialImage = null;
+            this.pbxLogo.Location = new System.Drawing.Point(135, 200);
+            this.pbxLogo.Name = "pbxLogo";
+            this.pbxLogo.Size = new System.Drawing.Size(130, 130);
+            this.pbxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxLogo.TabIndex = 0;
+            this.pbxLogo.TabStop = false;
+            // 
+            // btnFechar
+            // 
+            this.btnFechar.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnFechar.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnFechar.FlatAppearance.BorderSize = 2;
+            this.btnFechar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFechar.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFechar.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnFechar.Location = new System.Drawing.Point(860, 0);
+            this.btnFechar.Name = "btnFechar";
+            this.btnFechar.Size = new System.Drawing.Size(40, 40);
+            this.btnFechar.TabIndex = 1;
+            this.btnFechar.Text = "X";
+            this.btnFechar.UseVisualStyleBackColor = false;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
             // lblLogin
             // 
@@ -133,12 +133,12 @@
             this.lblSenha.TabIndex = 3;
             this.lblSenha.Text = "Senha";
             // 
-            // btnEmail
+            // tbxEmail
             // 
-            this.btnEmail.Location = new System.Drawing.Point(557, 148);
-            this.btnEmail.Name = "btnEmail";
-            this.btnEmail.Size = new System.Drawing.Size(125, 20);
-            this.btnEmail.TabIndex = 4;
+            this.tbxEmail.Location = new System.Drawing.Point(557, 148);
+            this.tbxEmail.Name = "tbxEmail";
+            this.tbxEmail.Size = new System.Drawing.Size(125, 20);
+            this.tbxEmail.TabIndex = 4;
             // 
             // tbxSenha
             // 
@@ -149,18 +149,19 @@
             this.tbxSenha.Size = new System.Drawing.Size(125, 20);
             this.tbxSenha.TabIndex = 5;
             // 
-            // button1
+            // btnEntrar
             // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(575, 365);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(84, 32);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Entrar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnEntrar.FlatAppearance.BorderSize = 0;
+            this.btnEntrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnEntrar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEntrar.ForeColor = System.Drawing.Color.Black;
+            this.btnEntrar.Location = new System.Drawing.Point(575, 365);
+            this.btnEntrar.Name = "btnEntrar";
+            this.btnEntrar.Size = new System.Drawing.Size(84, 32);
+            this.btnEntrar.TabIndex = 6;
+            this.btnEntrar.Text = "Entrar";
+            this.btnEntrar.UseVisualStyleBackColor = true;
+            this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
             // 
             // pbxEmail
             // 
@@ -192,9 +193,9 @@
             this.ClientSize = new System.Drawing.Size(900, 700);
             this.Controls.Add(this.pbxSenha);
             this.Controls.Add(this.pbxEmail);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnEntrar);
             this.Controls.Add(this.tbxSenha);
-            this.Controls.Add(this.btnEmail);
+            this.Controls.Add(this.tbxEmail);
             this.Controls.Add(this.lblSenha);
             this.Controls.Add(this.lblLogin);
             this.Controls.Add(this.btnFechar);
@@ -222,9 +223,9 @@
         private System.Windows.Forms.Label lblBemVindo01;
         private System.Windows.Forms.Label lblLogin;
         private System.Windows.Forms.Label lblSenha;
-        private System.Windows.Forms.TextBox btnEmail;
+        private System.Windows.Forms.TextBox tbxEmail;
         private System.Windows.Forms.TextBox tbxSenha;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnEntrar;
         private System.Windows.Forms.PictureBox pbxEmail;
         private System.Windows.Forms.PictureBox pbxSenha;
     }

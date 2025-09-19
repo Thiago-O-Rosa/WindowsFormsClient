@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ClassLibraryUser;
 
 namespace WindowsFormsClient
 {
@@ -16,6 +17,8 @@ namespace WindowsFormsClient
         {
             InitializeComponent();
         }
+
+        private ClassUser _user = new ClassUser(0,"","","");
 
         private void btnFechar_Click(object sender, EventArgs e)
         {
@@ -32,5 +35,29 @@ namespace WindowsFormsClient
         {
             tbxSenha.PasswordChar = '*';
         }
+
+        private void btnEntrar_Click(object sender, EventArgs e)
+        {
+            //Inicialização
+            string email = "";
+            string password = "";
+
+            //Entrada de Dados 
+            email = tbxEmail.Text;
+            password = tbxSenha.Text;
+
+            //Processamento
+           string menssagem = _user.Entrar(email, password);
+            MessageBox.Show(menssagem, "Loguin");//Saída
+
+            if(menssagem == "Login feito com sucesso")
+            {
+                FormHome _formHome = new FormHome();
+                _formHome.Show();
+                this.Hide();
+            }
+        }
     }
+
+    
 }
