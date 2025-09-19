@@ -17,9 +17,10 @@ namespace WindowsFormsClient
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnFechar_Click(object sender, EventArgs e)
         {
-
+            //this.Close(); --> Fecha apenas o Form atual
+            Application.Exit();//Fecha todos os Forms
         }
     }
 }
