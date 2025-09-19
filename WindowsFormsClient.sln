@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsClient", "Windo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsAdmin", "WindowsFormsAdmin\WindowsFormsAdmin.csproj", "{0F6A6501-BF69-4758-B007-26279AD1E9A0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibraryUser", "ClassLibraryUser\ClassLibraryUser.csproj", "{441CC05C-50D8-4B81-9969-1D88B924F401}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0F6A6501-BF69-4758-B007-26279AD1E9A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F6A6501-BF69-4758-B007-26279AD1E9A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F6A6501-BF69-4758-B007-26279AD1E9A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{441CC05C-50D8-4B81-9969-1D88B924F401}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{441CC05C-50D8-4B81-9969-1D88B924F401}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{441CC05C-50D8-4B81-9969-1D88B924F401}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{441CC05C-50D8-4B81-9969-1D88B924F401}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
