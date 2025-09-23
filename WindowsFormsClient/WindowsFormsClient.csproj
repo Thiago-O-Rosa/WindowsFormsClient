@@ -60,6 +60,33 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControlBooks.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlBooks.Designer.cs">
+      <DependentUpon>UserControlBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlFAQ.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlFAQ.Designer.cs">
+      <DependentUpon>UserControlFAQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlHome.Designer.cs">
+      <DependentUpon>UserControlHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlSobre.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlSobre.Designer.cs">
+      <DependentUpon>UserControlSobre.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormHome.resx">
+      <DependentUpon>FormHome.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -71,7 +98,20 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserControlBooks.resx">
+      <DependentUpon>UserControlBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlFAQ.resx">
+      <DependentUpon>UserControlFAQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlHome.resx">
+      <DependentUpon>UserControlHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlSobre.resx">
+      <DependentUpon>UserControlSobre.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -90,6 +130,9 @@
       <Project>{441cc05c-50d8-4b81-9969-1d88b924f401}</Project>
       <Name>ClassLibraryUser</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-gradient-background-07xqmk2r9n9vmxli.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
