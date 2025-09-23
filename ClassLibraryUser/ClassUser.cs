@@ -33,7 +33,7 @@ namespace ClassLibraryUser
                 return "Login feito com sucesso";
             }
             else {
-                return "Email e/ou senha inválidos";
+                return "Email e/ou senha inválidos.";
             }
 
         }
