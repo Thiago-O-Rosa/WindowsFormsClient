@@ -16,5 +16,10 @@ namespace WindowsFormsClient
         {
             InitializeComponent();
         }
+
+        private void lbxListMateriais_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

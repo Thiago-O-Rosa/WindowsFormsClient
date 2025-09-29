@@ -37,10 +37,10 @@
             this.btnLivros = new System.Windows.Forms.Button();
             this.btnSobre = new System.Windows.Forms.Button();
             this.btnInicio = new System.Windows.Forms.Button();
-            this._userControlBooks = new WindowsFormsClient.UserControlBooks();
-            this._userControlSobre = new WindowsFormsClient.UserControlSobre();
-            this._userControlFAQ = new WindowsFormsClient.UserControlFAQ();
             this._userControlHome = new WindowsFormsClient.UserControlHome();
+            this._userControlFAQ = new WindowsFormsClient.UserControlFAQ();
+            this._userControlSobre = new WindowsFormsClient.UserControlSobre();
+            this._userControlBooks = new WindowsFormsClient.UserControlBooks();
             this.pnlAzul.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -115,7 +115,7 @@
             this.btnFAQ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFAQ.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFAQ.ForeColor = System.Drawing.Color.Transparent;
-            this.btnFAQ.Location = new System.Drawing.Point(50, 399);
+            this.btnFAQ.Location = new System.Drawing.Point(50, 409);
             this.btnFAQ.Name = "btnFAQ";
             this.btnFAQ.Size = new System.Drawing.Size(100, 32);
             this.btnFAQ.TabIndex = 14;
@@ -132,11 +132,11 @@
             this.btnLivros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLivros.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLivros.ForeColor = System.Drawing.Color.White;
-            this.btnLivros.Location = new System.Drawing.Point(35, 339);
+            this.btnLivros.Location = new System.Drawing.Point(50, 339);
             this.btnLivros.Name = "btnLivros";
-            this.btnLivros.Size = new System.Drawing.Size(131, 35);
+            this.btnLivros.Size = new System.Drawing.Size(100, 52);
             this.btnLivros.TabIndex = 13;
-            this.btnLivros.Text = "Lista de livros";
+            this.btnLivros.Text = "Lista de Materiais";
             this.btnLivros.UseVisualStyleBackColor = false;
             this.btnLivros.Click += new System.EventHandler(this.btnLivros_Click);
             // 
@@ -149,7 +149,7 @@
             this.btnSobre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSobre.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSobre.ForeColor = System.Drawing.Color.Transparent;
-            this.btnSobre.Location = new System.Drawing.Point(50, 457);
+            this.btnSobre.Location = new System.Drawing.Point(50, 460);
             this.btnSobre.Name = "btnSobre";
             this.btnSobre.Size = new System.Drawing.Size(100, 32);
             this.btnSobre.TabIndex = 12;
@@ -166,7 +166,7 @@
             this.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInicio.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInicio.ForeColor = System.Drawing.Color.White;
-            this.btnInicio.Location = new System.Drawing.Point(50, 277);
+            this.btnInicio.Location = new System.Drawing.Point(50, 292);
             this.btnInicio.Name = "btnInicio";
             this.btnInicio.Size = new System.Drawing.Size(100, 32);
             this.btnInicio.TabIndex = 11;
@@ -174,19 +174,12 @@
             this.btnInicio.UseVisualStyleBackColor = false;
             this.btnInicio.Click += new System.EventHandler(this.btnInicio_Click);
             // 
-            // _userControlBooks
+            // _userControlHome
             // 
-            this._userControlBooks.Location = new System.Drawing.Point(200, 0);
-            this._userControlBooks.Name = "_userControlBooks";
-            this._userControlBooks.Size = new System.Drawing.Size(700, 700);
-            this._userControlBooks.TabIndex = 11;
-            // 
-            // _userControlSobre
-            // 
-            this._userControlSobre.Location = new System.Drawing.Point(200, 0);
-            this._userControlSobre.Name = "_userControlSobre";
-            this._userControlSobre.Size = new System.Drawing.Size(700, 700);
-            this._userControlSobre.TabIndex = 12;
+            this._userControlHome.Location = new System.Drawing.Point(200, 0);
+            this._userControlHome.Name = "_userControlHome";
+            this._userControlHome.Size = new System.Drawing.Size(700, 700);
+            this._userControlHome.TabIndex = 14;
             // 
             // _userControlFAQ
             // 
@@ -195,12 +188,19 @@
             this._userControlFAQ.Size = new System.Drawing.Size(700, 700);
             this._userControlFAQ.TabIndex = 13;
             // 
-            // _userControlHome
+            // _userControlSobre
             // 
-            this._userControlHome.Location = new System.Drawing.Point(200, 0);
-            this._userControlHome.Name = "_userControlHome";
-            this._userControlHome.Size = new System.Drawing.Size(700, 700);
-            this._userControlHome.TabIndex = 14;
+            this._userControlSobre.Location = new System.Drawing.Point(200, 0);
+            this._userControlSobre.Name = "_userControlSobre";
+            this._userControlSobre.Size = new System.Drawing.Size(700, 700);
+            this._userControlSobre.TabIndex = 12;
+            // 
+            // _userControlBooks
+            // 
+            this._userControlBooks.Location = new System.Drawing.Point(200, 0);
+            this._userControlBooks.Name = "_userControlBooks";
+            this._userControlBooks.Size = new System.Drawing.Size(700, 700);
+            this._userControlBooks.TabIndex = 11;
             // 
             // FormHome
             // 

@@ -30,21 +30,21 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
             this.pnlAzul = new System.Windows.Forms.Panel();
+            this.lblBemVindo02 = new System.Windows.Forms.Label();
+            this.lblBemVindo01 = new System.Windows.Forms.Label();
+            this.pbxLogo = new System.Windows.Forms.PictureBox();
             this.btnFechar = new System.Windows.Forms.Button();
             this.lblLogin = new System.Windows.Forms.Label();
             this.lblSenha = new System.Windows.Forms.Label();
             this.tbxEmail = new System.Windows.Forms.TextBox();
             this.tbxSenha = new System.Windows.Forms.TextBox();
             this.btnEntrar = new System.Windows.Forms.Button();
-            this.lblBemVindo02 = new System.Windows.Forms.Label();
-            this.lblBemVindo01 = new System.Windows.Forms.Label();
             this.pbxSenha = new System.Windows.Forms.PictureBox();
             this.pbxEmail = new System.Windows.Forms.PictureBox();
-            this.pbxLogo = new System.Windows.Forms.PictureBox();
             this.pnlAzul.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSenha)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxEmail)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlAzul
@@ -60,6 +60,44 @@
             this.pnlAzul.Name = "pnlAzul";
             this.pnlAzul.Size = new System.Drawing.Size(400, 700);
             this.pnlAzul.TabIndex = 0;
+            // 
+            // lblBemVindo02
+            // 
+            this.lblBemVindo02.AutoSize = true;
+            this.lblBemVindo02.Font = new System.Drawing.Font("Segoe UI", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBemVindo02.ForeColor = System.Drawing.Color.White;
+            this.lblBemVindo02.Location = new System.Drawing.Point(12, 397);
+            this.lblBemVindo02.Name = "lblBemVindo02";
+            this.lblBemVindo02.Size = new System.Drawing.Size(364, 50);
+            this.lblBemVindo02.TabIndex = 6;
+            this.lblBemVindo02.Text = "Controle de Estoque";
+            // 
+            // lblBemVindo01
+            // 
+            this.lblBemVindo01.AutoSize = true;
+            this.lblBemVindo01.BackColor = System.Drawing.Color.Transparent;
+            this.lblBemVindo01.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblBemVindo01.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBemVindo01.ForeColor = System.Drawing.Color.White;
+            this.lblBemVindo01.Location = new System.Drawing.Point(51, 365);
+            this.lblBemVindo01.Name = "lblBemVindo01";
+            this.lblBemVindo01.Size = new System.Drawing.Size(313, 32);
+            this.lblBemVindo01.TabIndex = 5;
+            this.lblBemVindo01.Text = "Seja Bem Vindo ao Sistema ";
+            // 
+            // pbxLogo
+            // 
+            this.pbxLogo.BackColor = System.Drawing.Color.Transparent;
+            this.pbxLogo.ErrorImage = null;
+            this.pbxLogo.Image = ((System.Drawing.Image)(resources.GetObject("pbxLogo.Image")));
+            this.pbxLogo.ImageLocation = "10";
+            this.pbxLogo.InitialImage = null;
+            this.pbxLogo.Location = new System.Drawing.Point(146, 223);
+            this.pbxLogo.Name = "pbxLogo";
+            this.pbxLogo.Size = new System.Drawing.Size(130, 130);
+            this.pbxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxLogo.TabIndex = 4;
+            this.pbxLogo.TabStop = false;
             // 
             // btnFechar
             // 
@@ -132,30 +170,6 @@
             this.btnEntrar.UseVisualStyleBackColor = true;
             this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
             // 
-            // lblBemVindo02
-            // 
-            this.lblBemVindo02.AutoSize = true;
-            this.lblBemVindo02.Font = new System.Drawing.Font("Segoe UI", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBemVindo02.ForeColor = System.Drawing.Color.White;
-            this.lblBemVindo02.Location = new System.Drawing.Point(12, 397);
-            this.lblBemVindo02.Name = "lblBemVindo02";
-            this.lblBemVindo02.Size = new System.Drawing.Size(364, 50);
-            this.lblBemVindo02.TabIndex = 6;
-            this.lblBemVindo02.Text = "Controle de Estoque";
-            // 
-            // lblBemVindo01
-            // 
-            this.lblBemVindo01.AutoSize = true;
-            this.lblBemVindo01.BackColor = System.Drawing.Color.Transparent;
-            this.lblBemVindo01.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblBemVindo01.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBemVindo01.ForeColor = System.Drawing.Color.White;
-            this.lblBemVindo01.Location = new System.Drawing.Point(51, 365);
-            this.lblBemVindo01.Name = "lblBemVindo01";
-            this.lblBemVindo01.Size = new System.Drawing.Size(313, 32);
-            this.lblBemVindo01.TabIndex = 5;
-            this.lblBemVindo01.Text = "Seja Bem Vindo ao Sistema ";
-            // 
             // pbxSenha
             // 
             this.pbxSenha.Image = ((System.Drawing.Image)(resources.GetObject("pbxSenha.Image")));
@@ -178,19 +192,6 @@
             this.pbxEmail.TabIndex = 7;
             this.pbxEmail.TabStop = false;
             // 
-            // pbxLogo
-            // 
-            this.pbxLogo.BackColor = System.Drawing.Color.Transparent;
-            this.pbxLogo.ErrorImage = null;
-            this.pbxLogo.ImageLocation = "10";
-            this.pbxLogo.InitialImage = null;
-            this.pbxLogo.Location = new System.Drawing.Point(146, 223);
-            this.pbxLogo.Name = "pbxLogo";
-            this.pbxLogo.Size = new System.Drawing.Size(130, 130);
-            this.pbxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbxLogo.TabIndex = 4;
-            this.pbxLogo.TabStop = false;
-            // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -212,9 +213,9 @@
             this.Text = "FormLogin";
             this.pnlAzul.ResumeLayout(false);
             this.pnlAzul.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSenha)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxEmail)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
