@@ -69,7 +69,7 @@
             this.dgvTabelas.Name = "dgvTabelas";
             this.dgvTabelas.Size = new System.Drawing.Size(685, 543);
             this.dgvTabelas.TabIndex = 4;
-            this.dgvTabelas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+
             // 
             // Tipo
             // 
