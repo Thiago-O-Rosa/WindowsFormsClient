@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -23,8 +24,8 @@ namespace ClassLibraryUser
             this.Email = _email;
             this.Password = _password;
         }
-
-        //Métodos
+         //Métodos
+        
         public string Entrar (string email, string password)
         {
 
@@ -42,6 +43,8 @@ namespace ClassLibraryUser
         {
             return "";
         }
+
+       
 
     }
 }
