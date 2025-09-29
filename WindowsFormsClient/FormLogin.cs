@@ -37,14 +37,16 @@ namespace WindowsFormsClient
         }
 
         private void btnEntrar_Click(object sender, EventArgs e)
-        {
-            //Inicialização
-            string email = "";
-            string password = "";
+        { 
+            tbxEmail.Focus();
+            tbxSenha.Focus();
+            ////Inicialização
+            //string email = "";
+            //string password = "";
 
             //Entrada de Dados 
-            email = tbxEmail.Text;
-            password = tbxSenha.Text;
+            string email = tbxEmail.Text;
+            string password = tbxSenha.Text;
 
             //Processamento
            string menssagem = _user.Entrar(email, password);

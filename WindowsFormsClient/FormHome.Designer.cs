@@ -40,7 +40,7 @@
             this._userControlHome = new WindowsFormsClient.UserControlHome();
             this._userControlFAQ = new WindowsFormsClient.UserControlFAQ();
             this._userControlSobre = new WindowsFormsClient.UserControlSobre();
-            this._userControlBooks = new WindowsFormsClient.UserControlBooks();
+            this._userControlBooks = new WindowsFormsClient.UserColtrolBooks();
             this.pnlAzul.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -232,7 +232,7 @@
         private System.Windows.Forms.Button btnSobre;
         private System.Windows.Forms.Button btnSair;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private UserControlBooks _userControlBooks;
+        private UserColtrolBooks _userControlBooks;
         private UserControlSobre _userControlSobre;
         private UserControlFAQ _userControlFAQ;
         private UserControlHome _userControlHome;

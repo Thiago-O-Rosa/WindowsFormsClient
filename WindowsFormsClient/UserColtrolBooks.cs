@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,21 +14,19 @@ using ClassLibraryUser;
 
 namespace WindowsFormsClient
 {
-    public partial class UserControlBooks : UserControl
+    public partial class UserColtrolBooks : UserControl
     {
-        public UserControlBooks()
+        public UserColtrolBooks()
         {
             InitializeComponent();
         }
 
         private ClassPecaTI _lista = new ClassPecaTI ("", "", "", 0 , 0 , "" ,0 ,0);
 
-        
-
+       
         private void UserControlBooks_Load(object sender, EventArgs e)
         {
-            string lista = dgvTabelas.Text;
-           //lista = new List<ClassPecaTI>
+           
         }
     }
 }

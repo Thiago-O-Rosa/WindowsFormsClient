@@ -20,20 +20,20 @@ namespace ClassLibraryUser
             private int DataHoraDev { get; set; }
 
             //Construtor
-            public ClassPecaTI(string _tipos, string _marcas, string _modelos, int _numeroSeries, int _quantidades, string _responsaveis, int _dataHoraRet, int _dataHoraDev)
+            public ClassPecaTI(string _tipo, string _marca, string _modelo, int _numeroSerie, int _quantidade, string _responsavel, int _dataHoraRet, int _dataHoraDev)
             {
-                this.Tipos = _tipos;
-                this.Marcas = _marcas;
-                this.Modelos = _modelos;
-                this.NumeroSeries = _numeroSeries;
-                this.Quantidades = _quantidades;
-                this.Responsaveis = _responsaveis;
+                this.Tipos = _tipo;
+                this.Marcas = _marca;
+                this.Modelos = _modelo;
+                this.NumeroSeries = _numeroSerie;
+                this.Quantidades = _quantidade;
+                this.Responsaveis = _responsavel;
                 this.DataHoraRet = _dataHoraRet;
                 this.DataHoraDev = _dataHoraDev;
             }
 
             
-            public string Listar(string _tipos, string _marcas, string _modelos, int _numeroseries, int _quantidades, string _responsaveis, int _dataHoraRet, int _dataHoraDev)
+            public string Lista (string _tipos, string _marcas, string _modelos, int _numeroseries, int _quantidades, string _responsaveis, int _dataHoraRet, int _dataHoraDev)
             {
                 return "";
             }

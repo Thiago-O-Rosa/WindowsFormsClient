@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsClient
 {
-    partial class UserControlBooks
+    partial class UserColtrolBooks
     {
         /// <summary> 
         /// Variável de designer necessária.
@@ -38,8 +38,6 @@
             this.Responsavel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DataHora = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DataHora2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTabelas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,7 +67,6 @@
             this.dgvTabelas.Name = "dgvTabelas";
             this.dgvTabelas.Size = new System.Drawing.Size(685, 543);
             this.dgvTabelas.TabIndex = 4;
-
             // 
             // Tipo
             // 
@@ -111,28 +108,10 @@
             this.DataHora2.HeaderText = "Data e Hora (Devolução)";
             this.DataHora2.Name = "DataHora2";
             // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(58, 75);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 5;
-            // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(333, 94);
-            this.maskedTextBox1.Mask = "00/00/0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBox1.TabIndex = 6;
-            this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
-            // 
             // UserControlBooks
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.maskedTextBox1);
-            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.dgvTabelas);
             this.Controls.Add(this.label1);
             this.Name = "UserControlBooks";
@@ -156,7 +135,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Responsavel;
         private System.Windows.Forms.DataGridViewTextBoxColumn DataHora;
         private System.Windows.Forms.DataGridViewTextBoxColumn DataHora2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
     }
 }
