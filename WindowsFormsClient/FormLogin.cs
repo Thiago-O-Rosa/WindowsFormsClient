@@ -37,22 +37,18 @@ namespace WindowsFormsClient
         }
 
         private void btnEntrar_Click(object sender, EventArgs e)
-        { 
-            tbxEmail.Focus();
-            tbxSenha.Focus();
-            ////Inicialização
-            //string email = "";
-            //string password = "";
-
+        {
             //Entrada de Dados 
-            string email = tbxEmail.Text;
-            string password = tbxSenha.Text;
+            string email = tbxEmail.Text.Trim();
+            string password = tbxSenha.Text.Trim();
+            tbxEmail.Focus();
+
 
             //Processamento
-           string menssagem = _user.Entrar(email, password);
+            string menssagem = _user.Entrar(email, password);
             MessageBox.Show(menssagem, "Loguin");//Saída
 
-            if(menssagem == "Login feito com sucesso")
+            if (menssagem == "Login feito com sucesso")
             {
                 FormHome _formHome = new FormHome();
                 _formHome.Show();
@@ -60,9 +56,23 @@ namespace WindowsFormsClient
             }
         }
 
-        private void FormLogin_Load(object sender, EventArgs e)
-        {
 
+        private void tbxEmail_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            tbxEmail.Focus();
+            if (e.KeyChar == 13) // 13 = é o código do botão ENTER
+            {
+                btnEntrar_Click(sender, e);
+            }
+        }
+
+        private void tbxSenha_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            tbxSenha.Focus();
+            if (e.KeyChar == 13) // 13 = é o código do botão ENTER
+            {
+                btnEntrar_Click(sender, e);
+            }
         }
     }
 

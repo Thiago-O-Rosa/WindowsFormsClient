@@ -89,7 +89,6 @@
             // 
             this.pbxLogo.BackColor = System.Drawing.Color.Transparent;
             this.pbxLogo.ErrorImage = null;
-            this.pbxLogo.Image = ((System.Drawing.Image)(resources.GetObject("pbxLogo.Image")));
             this.pbxLogo.ImageLocation = "10";
             this.pbxLogo.InitialImage = null;
             this.pbxLogo.Location = new System.Drawing.Point(146, 223);
@@ -145,6 +144,7 @@
             this.tbxEmail.Name = "tbxEmail";
             this.tbxEmail.Size = new System.Drawing.Size(125, 20);
             this.tbxEmail.TabIndex = 4;
+            this.tbxEmail.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbxEmail_KeyPress);
             // 
             // tbxSenha
             // 
@@ -154,6 +154,7 @@
             this.tbxSenha.PasswordChar = '*';
             this.tbxSenha.Size = new System.Drawing.Size(125, 20);
             this.tbxSenha.TabIndex = 5;
+            this.tbxSenha.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbxSenha_KeyPress);
             // 
             // btnEntrar
             // 
@@ -211,7 +212,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormLogin";
             this.Text = "FormLogin";
-            this.Load += new System.EventHandler(this.FormLogin_Load);
             this.pnlAzul.ResumeLayout(false);
             this.pnlAzul.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).EndInit();
