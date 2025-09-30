@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace WindowsFormsAdmin
 {
-    public partial class FormLogin : Form
+    public partial class FormAdmin : Form
     {
-        public FormLogin()
+        public FormAdmin()
         {
             InitializeComponent();
+        }
+
+        private void FormAdmin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
