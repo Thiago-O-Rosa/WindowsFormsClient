@@ -20,6 +20,8 @@ namespace WindowsFormsClient
 
         private ClassUser _user = new ClassUser(0,"","","");
 
+        private ConnClass _conn = new ConnClass();
+
         private void btnFechar_Click(object sender, EventArgs e)
         {
             //this.Close(); --> Fecha apenas o Form atual
@@ -72,6 +74,18 @@ namespace WindowsFormsClient
             if (e.KeyChar == 13) // 13 = é o código do botão ENTER
             {
                 btnEntrar_Click(sender, e);
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try //----Tentar executar o comando...
+            {
+
+            }
+            catch //--- Caso nao de para executar o comando ....
+            {
+
             }
         }
     }
