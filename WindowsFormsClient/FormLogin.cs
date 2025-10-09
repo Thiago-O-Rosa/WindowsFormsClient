@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ClassLibraryUser;
 using System.Data.SqlClient;
+using System.Threading;
 
 namespace WindowsFormsClient
 {
@@ -23,7 +24,7 @@ namespace WindowsFormsClient
 
         private ClassUser _user = new ClassUser(0,"","","");
 
-        private ConnClass _conn = new ConnClass();
+        //private ConnClass _conn = new ConnClass();
 
         private void btnFechar_Click(object sender, EventArgs e)
         {
@@ -50,15 +51,22 @@ namespace WindowsFormsClient
 
 
             //Processamento
-            string menssagem = _user.Entrar(email, password);
-            MessageBox.Show(menssagem, "Loguin");//Saída
+            DataTable dt = _user.Entrar(email, password);//usando o objeto, com o  método (Entrar) com os valores email,passwor
 
-            if (menssagem == "Login feito com sucesso")
+            if(dt.Rows.Count > 0)
             {
+                
+                MessageBox.Show("Login realizado com sucesso");
                 FormHome _formHome = new FormHome();
                 _formHome.Show();
                 this.Hide();
             }
+            else
+            {
+                MessageBox.Show("Não foi possível fazer o Login. \nVerifique seu Email e Senha e tente novamente.", "Email ou Senha Incorretos");
+            }
+
+            
         }
 
 
