@@ -109,11 +109,11 @@
             this.btnFechar.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFechar.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnFechar.ImageKey = "(nenhum/a)";
-            this.btnFechar.Location = new System.Drawing.Point(860, 0);
+            this.btnFechar.Location = new System.Drawing.Point(846, -9);
             this.btnFechar.Name = "btnFechar";
-            this.btnFechar.Size = new System.Drawing.Size(40, 40);
+            this.btnFechar.Size = new System.Drawing.Size(115, 43);
             this.btnFechar.TabIndex = 1;
-            this.btnFechar.Text = "X";
+            this.btnFechar.Text = "X           ";
             this.btnFechar.UseVisualStyleBackColor = false;
             this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ClassLibraryUser;
+using System.Data.SqlClient;
 
 namespace WindowsFormsClient
 {
@@ -16,6 +17,8 @@ namespace WindowsFormsClient
         public FormLogin()
         {
             InitializeComponent();
+            btnFechar.FlatStyle = FlatStyle.Flat;
+            btnFechar.FlatAppearance.MouseOverBackColor = Color.Firebrick;
         }
 
         private ClassUser _user = new ClassUser(0,"","","");
@@ -77,17 +80,23 @@ namespace WindowsFormsClient
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            try //----Tentar executar o comando...
-            {
-
-            }
-            catch //--- Caso nao de para executar o comando ....
-            {
-
-            }
-        }
+        //private void button1_Click(object sender, EventArgs e)
+        //{
+        //    //Tratamento de erro
+        //    try //----Tentar executar o comando...
+        //    {
+        //        using (SqlConnection cn = _conn.GetConnection())
+        //        {
+        //            cn.Open();
+        //            MessageBox.Show(cn.ToString(), "Banco de Dados");
+        //        }
+        //    }
+        //    catch (Exception erro) //--- Pegar um erro ....
+        //    {
+        //        MessageBox.Show(erro.ToString(), "Erro no BD");
+        //    }
+        //    //finally {} // Executa mesmo que o try falha
+        //}
     }
 
     
