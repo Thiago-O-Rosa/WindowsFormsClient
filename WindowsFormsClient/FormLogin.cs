@@ -11,6 +11,9 @@ using ClassLibraryUser;
 using System.Data.SqlClient;
 using System.Threading;
 
+
+
+
 namespace WindowsFormsClient
 {
     public partial class FormLogin : Form
@@ -23,6 +26,33 @@ namespace WindowsFormsClient
         }
 
         private ClassUser _user = new ClassUser(0,"","","");
+        private void MostrarMensagemTemporaria (string mensagem, int duracaoMs = 2000)
+        {
+            Label lblMsg = new Label();
+            lblMsg.Text = mensagem;
+            lblMsg.AutoSize = false;
+            lblMsg.TextAlign = ContentAlignment.MiddleCenter;
+            lblMsg.Dock = DockStyle.Top;
+            lblMsg.BackColor = Color.LightGreen;
+            lblMsg.ForeColor = Color.Black;
+            lblMsg.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            lblMsg.Height = 30;
+
+            // Adiciona no form
+            this.Controls.Add(lblMsg);
+            lblMsg.BringToFront();
+
+            // Timer pra remover depois do tempo
+            Timer timer = new Timer();
+            timer.Interval = duracaoMs;
+            timer.Tick += (s, e) =>
+            {
+                timer.Stop();
+                this.Controls.Remove(lblMsg);
+                lblMsg.Dispose();
+            };
+            timer.Start();
+        }
 
         //private ConnClass _conn = new ConnClass();
 
